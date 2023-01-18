@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Александр Сухих](https://up.htmlacademy.ru/htmlcss/36/user/2250277).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Кукушкин] (https://htmlacademy.ru/profile/kukushkinds).
 
 ---
 
