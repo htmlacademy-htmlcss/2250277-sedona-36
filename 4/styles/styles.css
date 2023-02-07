@@ -51,12 +51,12 @@ body {
 .description {
   background-image: url(../images/index-background.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-color: blue;
 }
 
-li .button-popup{
+.button-popup{
   font-weight: 700;
-  width: 160px;
-  height: 36px;
   font-size: 16px;
   line-height: 20px;
   background-color: #756157;
@@ -96,6 +96,7 @@ li .button-popup{
 }
 
 .reason-description {
+  color: #333333;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -116,10 +117,6 @@ li .button-popup{
 
 .reason-list-road {
   background-color: rgba(131, 179, 211, 0.2);
-}
-
-.reason-description {
-  color: #333333;
 }
 
 .features-container {
@@ -188,8 +185,6 @@ li .button-popup{
 
 .search .button {
   font-weight: 700;
-  width: 376px;
-  height: 52px;
   font-size: 20px;
   line-height: 36px;
   background-color: #756157;
@@ -202,6 +197,8 @@ li .button-popup{
 .subscribe {
   background-image: url(../images/subscribe_background.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-color: blue;
   text-align: center;
   color: #FFFFFF;
 }
@@ -229,8 +226,6 @@ li .button-popup{
 
 .subscribe .button {
   font-weight: 700;
-  width: 232px;
-  height: 52px;
   font-size: 20px;
   line-height: 36px;
   background-color: #82B3D3;
@@ -249,7 +244,7 @@ li .button-popup{
   text-decoration: none;
 }
 
-/*Catalog*/
+/*Section*/
 .main-catalog {
   background-color: #FFFFFF;
 }
@@ -258,6 +253,7 @@ li .button-popup{
   background-image: url(../images/filter-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: blue;
   color: #FFFFFF;
 }
 
@@ -318,8 +314,6 @@ li .button-popup{
 }
 
 .scale button {
-  width: 20px;
-  height: 20px;
   border-radius: 5px;
   background-color: #FFFFFF;
   border: 0;
@@ -327,8 +321,6 @@ li .button-popup{
 
 .button-submit {
   font-weight: 700;
-  width: 191px;
-  height: 36px;
   border: 0;
   border-radius: 4px;
   background-color: #82B3D3;
@@ -343,8 +335,6 @@ li .button-popup{
   color: #FFFFFF;
   font-size: 16px;
   line-height: 20px;
-  width: 191px;
-  height: 36px;
   align-items: center;
   border: 0;
   background: 0;
@@ -359,8 +349,6 @@ li .button-popup{
 }
 
 .select-control {
-  width: 292px;
-  height: 49px;
   border-radius: 4px;
   border: 2px solid #E5E5E5;
   font-weight: 400;
@@ -370,16 +358,12 @@ li .button-popup{
 }
 
 .filter-active {
-  width: 48px;
-  height: 48px;
   border-radius: 4px;
   border: 2px solid #000000;
   background-color: #FFFFFF;
 }
 
 .not-active {
-  width: 48px;
-  height: 48px;
   border-radius: 4px;
   border: 2px solid #E5E5E5;
   background-color: #FFFFFF;
@@ -414,8 +398,6 @@ li .button-popup{
   color: #FFFFFF;
   text-transform: uppercase;
   text-decoration: none;
-  width: 140px;
-  height: 36px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -428,8 +410,6 @@ li .button-popup{
   color: #FFFFFF;
   background-color: #82B3D3;
   border-radius: 4px;
-  width: 140px;
-  height: 36px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -441,8 +421,6 @@ li .button-popup{
   color: #FFFFFF;
   background-color: #7DB54F;
   border-radius: 4px;
-  width: 140px;
-  height: 36px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -456,8 +434,6 @@ li .button-popup{
   color: #333333;
   background-color: #F2F2F2;
   border-radius: 4px;
-  width: 140px;
-  height: 37px;
 }
 
 .pagination-link {
@@ -468,8 +444,6 @@ li .button-popup{
   text-decoration: none;
   color: #FFFFFF;
   background-color: #82B3D3;
-  width: 60px;
-  height: 60px;
   border-radius: 4px;
 }
 
@@ -481,8 +455,6 @@ li .button-popup{
   text-decoration: none;
   color: #000000;
   background-color: #E5E5E5;
-  width: 60px;
-  height: 60px;
   border-radius: 4px;
 }
 
@@ -503,8 +475,6 @@ li .button-popup{
 
 .subscribe-catalog button {
   font-weight: 700;
-  width: 232px;
-  height: 52px;
   font-size: 20px;
   line-height: 36px;
   background-color: #82B3D3;
