@@ -1,0 +1,652 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  }
+
+body {
+  margin: 0;
+}
+
+.body-bacground {
+  padding: 0 40px;
+  margin: 0;
+  background-color: #F2F2F2;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.body-container {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background: #FFFFFF;
+  margin: 0 auto;
+  width: 1200px;
+  min-height: 100%;
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  color: black;
+
+}
+
+/*Header*/
+
+.navigation {
+  display: flex;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 339px;
+}
+
+.navigation-user {
+  max-width: 268px;
+  margin-left: auto;
+}
+
+.navigation-link {
+  font-weight: 700;
+  color: black;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/*Main*/
+
+.description {
+  background-image: url(../images/index-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: blue;
+  width: 1200px;
+  height: 485px;
+  position: relative;
+}
+
+.images {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+}
+
+.logo {
+  margin: 0 auto;
+  display: block;
+}
+
+
+.button-popup{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #756157;
+  color: #FFFFFF;
+  border: 0;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+/*reason*/
+
+.reason-criteria {
+  margin: 69px 0;
+}
+
+.reasons-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.reason-list {
+  flex:  1;
+  padding: 112.5px 85px;
+  list-style: none;
+}
+
+.reason-item {
+  display: flex;
+  flex: 2;
+}
+
+.reason h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color:#000000;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.criteria {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+
+.reason-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.reason-description {
+  color: #333333;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.reason-item-town,
+.reason-item-bridge {
+  background-color: #82B3D3;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.reason-list-tourist,
+.reason-list-square {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.reason-list-road {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+/*features-container*/
+
+.features {
+  width: 1200px;
+  height: 385px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.logo-feature {
+  display: block;
+  margin: 0 auto;
+}
+
+.offer {
+  margin: 64px 0;
+}
+
+.offer h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color:#000000
+}
+
+.offer p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+
+.features-food {
+  padding-left: 85px;
+  padding-right: 85px;
+  padding-top: 81px;
+  padding-bottom: 81px;
+}
+
+.features-house,
+.features-souvenir {
+  background-color: rgba(131, 179, 211, 0.12);
+  padding-left: 85px;
+  padding-right: 85px;
+  padding-top: 81px;
+  padding-bottom: 81px;
+}
+
+.title-item-black {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.title-item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+}
+
+.container h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.explation {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+
+/*search*/
+
+.container {
+  margin: 96px 304px;
+  text-align: center;
+}
+
+.search .button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #756157;
+  color: #FFFFFF;
+  border: 0;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+/*subscribe*/
+
+.subscribe {
+  background-image: url(../images/subscribe_background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: blue;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.link h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.link p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.subscribe input {
+  width: 452px;
+  height: 52px;
+  border-radius: 4px 0 0 4px;
+  border: 0;
+  background-color:  #F2F2F2;
+}
+
+.subscribe .button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #82B3D3;
+  color: #FFFFFF;
+  border: 0;
+  border-radius: 0 4px 4px 0;
+  text-transform: uppercase;
+}
+
+/*Footer*/
+
+.main-footer {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social-list {
+  margin: 0;
+  list-style: none;
+}
+
+.pfone-contacts {
+  font: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+}
+
+/*Catalog*/
+
+.filter-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-catalog {
+  background-color: #FFFFFF;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.advacned-settings {
+  background-image: url(../images/filter-background.jpg);
+  background-repeat: no-repeat;
+  background-color: blue;
+  color: #FFFFFF;
+  background-size: cover;
+}
+
+.advacned-settings h1 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrubs-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.advacned-settings legend {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+ .checkbox span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.control span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.price-controls span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+.min-price input{
+  width: 143px;
+  height: 48px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  border: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+.max-price input{
+  width: 143px;
+  height: 48px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  border: 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.scale button {
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  border: 0;
+}
+
+.button-submit {
+  font-weight: 700;
+  border: 0;
+  border-radius: 4px;
+  background-color: #82B3D3;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+}
+
+.button-reset {
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  border: 0;
+  background: 0;
+}
+
+.sort-container {
+  display: flex;
+}
+
+.found {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.select-control {
+  border-radius: 4px;
+  border: 2px solid #E5E5E5;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.filter-active {
+  border-radius: 4px;
+  border: 2px solid #000000;
+  background-color: #FFFFFF;
+}
+
+.not-active {
+  border-radius: 4px;
+  border: 2px solid #E5E5E5;
+  background-color: #FFFFFF;
+}
+
+.hotels {
+  flex-direction: row;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 70px;
+  padding: 0;
+  list-style: none;
+}
+
+.hotels-items {
+  border-radius: 4px;
+  border: 1px solid #E6E6E6;
+  margin: 10px;
+  padding: 20px;
+}
+
+.hotels h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.hotels-items
+.type {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.hotels-items
+.price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.hotel-button {
+  background-color: #756157;
+  border-radius: 4px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.actions-container label {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  border-radius: 4px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.active-container label {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background-color: #7DB54F;
+  border-radius: 4px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.rating p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #333333;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+}
+
+.pagination {
+  display: flex;
+  }
+
+.pagination-item {
+  margin: 0;
+  display: flex;
+}
+
+.pagination-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  border-radius: 4px;
+}
+
+.active {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  background-color: #E5E5E5;
+  border-radius: 4px;
+}
+
+
+.pagination-item span {
+  background-color: #E5E5E5;
+}
+.subscribe-catalog {
+  text-align: center;
+}
+
+.subscribe-catalog input {
+  width: 452px;
+  height: 52px;
+  border-radius: 4px 0 0 4px;
+  border: 0;
+  background-color:  #F2F2F2;
+}
+
+.subscribe-catalog button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #82B3D3;
+  color: #FFFFFF;
+  border: 0;
+  border-radius: 0 4px 4px 0;
+  text-transform: uppercase;
+}
+
+.footer-social-list {
+  display: flex;
+}
