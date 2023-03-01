@@ -21,7 +21,7 @@ box-sizing: border-box;
 }
 
 html {
-  height: 100%;
+  min-height: 100vh;
 }
 
 img {
@@ -45,15 +45,15 @@ img {
 
 body {
   margin: 0;
-  height: 100%;
+  min-height: 100vh;
 }
 
-.body-bakcground {
+.body-background {
   padding: 0 40px;
   background-color: #F2F2F2;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  min-height: 100vh;
 }
 
 .body-container {
@@ -73,18 +73,63 @@ body {
 
 .main-header {
   display: flex;
+  padding: 0 70px;
+}
+
+.main-header-logo {
+  display: block;
+  position: relative;
+  width: 138px;
+  height: 64px;
+  flex-shrink: 0;
+  z-index: 1;
+  clip-path: polygon(50% 120%, 0 0, 100% 0);
 }
 
 .navigation {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  padding: 0;
+  padding-left: 30px;
+}
+
+.navigation-item {
+  display: flex;
+  align-items: center;
 }
 
 .navigation-list {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  width: auto;
+  column-gap: 40px;
+}
+
+.navigation-list-item {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  column-gap: 20px;
+}
+
+.span-item {
+  background-color: #7DB54F;
+  color: #FFFFFF;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  text-align: center;
+  padding: 5px;
+  position: absolute;
+  top: 10px;
+  right: 256px;
 }
 
 .navigation-link {
@@ -94,6 +139,8 @@ body {
   line-height: 24px;
   text-decoration: none;
   text-align: center;
+  display: block;
+  padding: 20px 0;
 }
 
 /*Main*/
@@ -121,6 +168,7 @@ body {
   border: 0;
   border-radius: 4px;
   text-transform: uppercase;
+  padding: 8px 34px;
 }
 
 
@@ -155,6 +203,10 @@ display: flex;
 flex-wrap: wrap;
 }
 
+.reason-criteria {
+  padding: 69px 275.5px;
+}
+
 .reason-criteria h2 {
   font-weight: 700;
   font-size: 30px;
@@ -163,7 +215,8 @@ flex-wrap: wrap;
   text-align: center;
   text-transform: uppercase;
   margin: 0;
-  padding: 69px 290px 12.5px 290px;
+  margin-bottom: 25px;
+  padding: 0;
 }
 
 .criteria {
@@ -173,7 +226,7 @@ flex-wrap: wrap;
   text-align: center;
   color: #333333;
   margin: 0;
-  padding: 12.5px 274.5px 69px 274.5px;
+  padding: 0;
 }
 
 .reason-title {
@@ -214,6 +267,10 @@ flex-wrap: wrap;
 
 .features-item {
   padding: 81px 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .features-item:nth-child(odd) {
@@ -222,9 +279,13 @@ flex-wrap: wrap;
 
 .logo-feature {
   display: block;
-  margin: 0 auto;
+  margin: 0;
 }
 
+.offer {
+  padding: 64px 348px;
+
+}
 
 .offer h2 {
   font-weight: 700;
@@ -234,7 +295,8 @@ flex-wrap: wrap;
   text-transform: uppercase;
   color:#000000;
   margin: 0;
-  padding: 64px 347.5px 10px;
+  margin-bottom: 20px;
+  padding: 0;
 }
 
 .offer p {
@@ -244,7 +306,8 @@ flex-wrap: wrap;
   text-align: center;
   color: #333333;
   margin: 0;
-  padding: 10px 355px 64px;
+  margin-top: 20px;
+  padding: 0;
 }
 
 .title-item-black {
@@ -254,8 +317,8 @@ flex-wrap: wrap;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  margin: 0;
-  padding: 30px 0 30px;
+  margin: 30px 0 0 0;
+  padding: 0;
 }
 
 .title-item {
@@ -264,7 +327,8 @@ flex-wrap: wrap;
   line-height: 21px;
   text-align: center;
   color: #333333;
-  margin: 0;
+  margin: 30px 0 0 0;
+
 }
 
 /*search*/
@@ -287,6 +351,7 @@ padding: 96px 0 96px;
   color: #000000;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .explation {
@@ -296,7 +361,8 @@ padding: 96px 0 96px;
   text-align: center;
   color: #333333;
   margin: 0;
-  padding: 20px 0 54px;
+  padding:0;
+  margin-bottom: 54px;
 }
 
 .search .button {
@@ -334,6 +400,7 @@ text-align: center;
   line-height: 36px;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .subscribe p {
@@ -341,7 +408,7 @@ text-align: center;
   font-size: 22px;
   line-height: 26px;
   margin: 0;
-  padding: 20px 0 54px;
+  margin-bottom: 54px;
 
 }
 
@@ -362,6 +429,11 @@ text-align: center;
   border: 0;
   border-radius: 0 4px 4px 0;
   text-transform: uppercase;
+  padding: 8px 50px;
+}
+
+.subscribe-item form {
+  display: flex;
 }
 
 /*Footer*/
@@ -375,10 +447,15 @@ text-align: center;
   max-width: 1200px;
   background-color: #FFFFFF;
   box-shadow : 0 -5px 15px rgba(0, 0, 0, 0.2);
+  width: 1200px;
+  align-items: center;
+  height: 120px;
+  padding: 0 70px;
 }
 
 .footer-social-list {
   margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -391,11 +468,96 @@ text-align: center;
   text-decoration: none;
 }
 
+.social-link{
+padding: 13px 12px;
+
+}
+
 /*Catalog*/
+
+
+
+.main-filter-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
 
 .filter-content {
   display: flex;
-  justify-content: space-between;
+  gap: 70px;
+}
+
+.filter-box {
+  display: flex;
+  gap: 70px;
+}
+
+.main-filter-content legend {
+  margin-bottom: 32px;
+}
+
+.fieldset-box {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.control-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.scale button {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-top: 56px;
+}
+
+.buttons button {
+  padding: 8px 50px;
+}
+
+.infrastructure {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.infrastructure label {
+  display: flex;
+  align-items: center;
+}
+
+.infrastructure span {
+  padding-left: 12px;
+}
+
+
+.fieldset-box {
+  display: flex;
+}
+
+.check-input  {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+}
+
+.control-input {
+  width: 20px;
+  height: 20px;
+  margin: 0;
 }
 
 .main-catalog {
@@ -410,19 +572,33 @@ text-align: center;
   background-color: blue;
   color: #FFFFFF;
   background-size: cover;
+  padding: 35px 70px 70px;
 }
 
 .advacned-settings h1 {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.breadcrumbs {
+display: flex;
+list-style: none;
+margin: 0;
+padding: 0;
+column-gap: 10px;
 }
 
 .breadcrubs-link {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
+}
+
+.breadcrubs-link p {
+  margin: 0;
 }
 
 .advacned-settings legend {
@@ -441,6 +617,10 @@ text-align: center;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
+}
+
+.price-controls {
+  display: flex;
 }
 
 .price-controls span {
@@ -484,6 +664,7 @@ text-align: center;
   font-size: 16px;
   line-height: 20px;
   align-items: center;
+  text-transform: uppercase;
 }
 
 .button-reset {
@@ -494,12 +675,30 @@ text-align: center;
   align-items: center;
   border: 0;
   background: 0;
+  text-transform: uppercase;
 }
 
 .sort-container {
   display: flex;
   padding: 50px 70px 40px;
+  gap: 70px;
 }
+
+.selector-box {
+  display: flex;
+  gap: 200px;
+}
+
+.filter-button {
+  display: flex;
+  gap: 8px;
+}
+
+.filter-button button {
+  width: 48px;
+  height: 48px;
+}
+
 
 .found {
   font-weight: 700;
@@ -517,6 +716,7 @@ text-align: center;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  width: 292px;
 }
 
 .filter-active {
@@ -533,15 +733,16 @@ text-align: center;
 
 /*Catalog hotels*/
 
+
+
 .hotels {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  row-gap: 20px;
+  column-gap: 20px;
+  padding: 0 70px 40px;
   list-style: none;
-  gap: 20px;
-  padding: 0;
-  padding-left: 70px;
   margin: 0;
 }
 
@@ -549,6 +750,15 @@ text-align: center;
   border-radius: 4px;
   border: 1px solid #E6E6E6;
   padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  row-gap: 16px;
+  column-gap: 20px;
+}
+
+
+.hotels-items img {
+  grid-column: 1/3;
 }
 
 .hotels h3 {
@@ -557,21 +767,25 @@ text-align: center;
   line-height: 28px;
   color: #000000;
   margin: 0;
-  padding: 20px 0;
+  padding: 0;
+  grid-column: 1/-1;
 }
 
-.type-container {
+.type .price {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  display: flex;
   width: 100%;
-  justify-content: space-between;
+  margin: 0;
 }
 
-.type-container p {
+.hotels p {
   margin: 0;
+}
+
+.price {
+  text-align: end;
 }
 
 .hotel-button {
@@ -583,31 +797,38 @@ text-align: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
+  padding: 8px 26px;
 }
 
-.actions-container label {
+.actions-container {
   font-weight: 700;
   font-size: 16px;
-  line-height: 20px;
   color: #FFFFFF;
-  background-color: #82B3D3;
-  border-radius: 4px;
   text-transform: uppercase;
   text-align: center;
+  position: relative;
 }
 
-.active-container label {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #FFFFFF;
+
+.fake::before {
+content: "В избранное";
+color: #FFFFFF;
+background-color: #82B3D3;
+border-radius: 4px;
+display: block;
+text-align: center;
+line-height: 36px;
+cursor: pointer;
+
+}
+
+.input-ceckbox:checked + .fake::before{
+  content: "В избранном";
   background-color: #7DB54F;
-  border-radius: 4px;
-  text-transform: uppercase;
-  text-align: center;
 }
 
-.rating p {
+.rating {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -616,17 +837,28 @@ text-align: center;
   color: #333333;
   background-color: #F2F2F2;
   border-radius: 4px;
-  margin: 0;
+  align-self: center;
+  padding: 9px 0 8px;
+
+}
+
+.pagination-container {
+  padding: 40px 70px 60px;
 }
 
 .pagination {
   display: flex;
   padding: 0;
+  margin: 0;
   }
 
 .pagination-item {
   margin: 0;
   display: flex;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .pagination-link {
@@ -638,6 +870,7 @@ text-align: center;
   color: #FFFFFF;
   background-color: #82B3D3;
   border-radius: 4px;
+  padding: 12px 24px;
 }
 
 .active {
@@ -649,10 +882,12 @@ text-align: center;
   color: #000000;
   background-color: #E5E5E5;
   border-radius: 4px;
+  padding: 12px 24px;
 }
 
 .pagination-item span {
-  background-color: #E5E5E5;
+  padding: 12px 24px;
+  border-radius: 4px;
 }
 .subscribe-catalog {
   padding: 96px 258px 104px;
@@ -666,11 +901,13 @@ text-align: center;
 
 .subscribe-catalog h2{
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .subscribe-catalog p {
   margin: 0;
-  padding: 20px 0 54px;
+  margin-bottom: 54px;
+  padding: 0;
 }
 
 .subscribe-catalog input {
@@ -690,6 +927,11 @@ text-align: center;
   border: 0;
   border-radius: 0 4px 4px 0;
   text-transform: uppercase;
+  padding: 8px 50px;
+}
+
+.subscribe-catalog-item form {
+  display: flex;
 }
 
 .footer-social-list {
